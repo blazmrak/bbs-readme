@@ -21,7 +21,7 @@ known as my private key, 10 is my public key. Yes, that wall of text that you se
 **HUGE** one.
 
 <details>
-    <summary>More boring details</summary>
+    <summary>More</summary>
 
 You can think of groups as a set of numbers to which we can do some operation and the product of the operation is still
 part of this group. Groups that interest cryptographers are usually natural numbers modulus some big number.
@@ -92,7 +92,7 @@ To sign we just do $m^x$, which I'll refer to as $S$. To verify the signature, w
 $$e(S, g_{2}) \equiv e(m, w)$$
 
 <details>
-    <summary>Why does this work???</summary>
+    <summary>More</summary>
 
 At first this might look like random shit thrown together... And it kind of is, at least from the eyes of whoever is
 verifying the signature. We can however expand the random letters and get the following:
@@ -138,7 +138,7 @@ and verify:
 $$e(A, w) \equiv e(b, g_{2})$$
 
 <details>
-    <summary>How does this work?</summary>
+    <summary>More</summary>
 
 If we write everything out, we will get the following
 
@@ -185,7 +185,7 @@ He will then calculate $H$ by using $f(w)$ and $b$ and do:
 $$e(A, w \times g_{2}^e) \equiv e(b, g_{2})$$
 
 <details>
-    <summary>How does this work?</summary>
+    <summary>More</summary>
 
 Mostly the same as above, the only difference is that now we have to add $g_{2}^e$ on the left side, because we signed
 the messages with $\frac{1}{x+e}$.
@@ -289,7 +289,7 @@ Basically commitment (sum of randomized bases) is equal to sum of bases multipli
 equation multiplied by the challenge.
 
 <details>
-    <summary>WTF? Why?</summary>
+    <summary>More</summary>
 
 Let's write everything out slowly:
 
